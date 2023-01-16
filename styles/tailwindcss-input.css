@@ -89,6 +89,21 @@ body {
 .doc__code {
     @apply text-yellow-200;
 }
+.doc__code-red {
+    @apply text-red-200;
+}
+.doc__code-indigo {
+    @apply text-indigo-200;
+}
+.doc__code-gray {
+    @apply text-gray-200;
+}
+.doc__code-green {
+    @apply text-green-200;
+}
+.doc__code-slate {
+    @apply text-slate-600;
+}
 
 .doc__link {
     @apply text-blue-300;

@@ -180,14 +180,12 @@
                         code:    
 <pre class="doc__pre">
 <code class="doc__code">
-function greetMe (yourName) {
-    alert("Hello " + yourName); 
+<span class="doc__code-red">function</span> <span class="doc__code-indigo">greetMe</span> (<span class="doc__code-gray">yourName</span>) {
+    <span class="doc__code-red">alert</span>("<span class="doc__code-green">Hello</span> " + <span class="doc__code-gray">yourName</span>); 
 }
-
-greetMe("World");
+<span class="doc__code-indigo">greetMe</span>("<span class="doc__code-green">World</span>");
 </code>
 </pre>
-
                         Select the code in the pad and hit Ctrl+R to watch it
                         unfold in your browser!
                     </p>
@@ -221,7 +219,7 @@ greetMe("World");
                         With the keyword var. For example,
 <pre class="doc__pre">
 <code class="doc__code">
-var x = 42
+<span class="doc__code-red">var</span> <span class="doc__code-indigo">x</span> = <span class="doc__code-gray">42</span>
 </code>
 </pre>                  This syntax can be used to
                         declare both local and global variables.
@@ -230,7 +228,7 @@ var x = 42
                         By simply assigning it a value. For example,
 <pre class="doc__pre">
 <code class="doc__code">
-x = 42
+<span class="doc__code-indigo">x</span> = <span class="doc__code-gray">42</span>
 </code>
 </pre>
                         This always declares a global
@@ -241,7 +239,7 @@ x = 42
                         With the keyword let. For example,
 <pre class="doc__pre">
 <code class="doc__code">
-let y = 13
+<span class="doc__code-red">let</span> <span class="doc__code-indigo">y</span> = <span class="doc__code-gray">13</span>
 </code>
 </pre>
                         This syntax can be used to declare a block scope
@@ -271,11 +269,11 @@ let y = 13
                     </p>
 <pre class="doc__pre">
 <code class="doc__code">
-if (true) { 
-    var x = 5; 
+<span class="doc__code-red">if</span> (<span class="doc__code-gray">true</span>) { 
+    <span class="doc__code-red">var</span> <span class="doc__code-indigo">x</span> = <span class="doc__code-gray">5</span>; 
 }
 
-console.log(x); // 5
+console<span class="doc__code-red">.log</span>(<span class="doc__code-gray">x</span>); <span class="doc__code-slate">// 5</span>
 </code>
 </pre>
                     <p class="doc__paragraph">
@@ -284,13 +282,13 @@ console.log(x); // 5
                     </p>
 <pre class="doc__pre">
 <code class="doc__code">
-if (true) {
-    let y = 5;
+<span class="doc__code-red">if</span> (<span class="doc__code-gray">true</span>) {
+    <span class="doc__code-red">let</span> <span class="doc__code-indigo">y</span> = <span class="doc__code-gray">5</span>;
 }
 
-console.log(y);
+console<span class="doc__code-red">.log</span>(<span class="doc__code-gray">y</span>);
 
-<span class="doc__code-comment">// ReferenceError: y is not defined</span>
+<span class="doc__code-slate">// ReferenceError: y is not defined</span>
 </code>
 </pre>
                 </article>
@@ -324,7 +322,7 @@ console.log(y);
 
 <pre class="doc__pre">
 <code class="doc__code">
-const PI = 3.14;
+<span class="doc__code-red">const</span> <span class="doc__code-indigo">PI</span> = <span class="doc__code-gray">3.14</span>;
 </code>
 </pre>
                     <p class="doc__paragraph">
@@ -348,17 +346,17 @@ const PI = 3.14;
                     <p class="doc__paragraph">
 <pre class="doc__pre">
 <code class="doc__code">
-<span class="doc__code-comment">// THIS WILL CAUSE AN ERROR</span>
+<span class="doc__code-slate">// THIS WILL CAUSE AN ERROR</span>
 
-function f () {};
+<span class="doc__code-red">function</span> <span class="doc__code-indigo">f</span> () {};
 
-const f = 5;
+<span class="doc__code-red">const</span> <span class="doc__code-indigo">f</span> = <span class="doc__code-gray">5</span>;
 
-<span class="doc__code-comment">// THIS WILL CAUSE AN ERROR ALSO</span>
+<span class="doc__code-slate">// THIS WILL CAUSE AN ERROR ALSO</span>
 
-function f () { 
-    const g = 5;
-    var g;  <span class="doc__code-comment">//statements</span>
+<span class="doc__code-red">function</span> <span class="doc__code-indigo">f</span> () { 
+    <span class="doc__code-red">const</span> <span class="doc__code-indigo">g</span> = <span class="doc__code-gray">5</span>;
+    <span class="doc__code-red">var</span> <span class="doc__code-indigo">g</span>;  <span class="doc__code-slate">//statements</span>
 }
 </code>
 </pre>
@@ -366,11 +364,11 @@ function f () {
                         following statement is executed without problems.
 <pre class="doc__pre">
 <code class="doc__code">
-const MY_OBJECT = {
-    "key": "value"
+<span class="doc__code-red">const</span> <span class="doc__code-indigo">MY_OBJECT</span> = {
+    "<span class="doc__code-green">key</span>": "<span class="doc__code-green">value</span>"
 };
 
-MY_OBJECT.key = "otherValue";
+<span class="doc__code-indigo">MY_OBJECT</span><span class="doc__code-red">.key</span> = "<span class="doc__code-green">otherValue</span>";
 </code>
 </pre>
                     </p>
@@ -434,10 +432,10 @@ MY_OBJECT.key = "otherValue";
 
 <pre class="doc__pre">
 <code class="doc__code">
-if (condition) { 
-    statement_1; 
-} else { 
-    statement_2;
+<span class="doc__code-red">if</span> (<span class="doc__code-gray">condition</span>) { 
+    <span class="doc__code-indigo">statement_1;</span> 
+} <span class="doc__code-red">else</span> { 
+    <span class="doc__code-indigo">statement_2;</span>
 }
 </code>
 </pre>
@@ -456,14 +454,14 @@ if (condition) {
                         
 <pre class="doc__pre">
 <code class="doc__code">
-if (condition_1) { 
-    statement_1; 
-} else if (condition_2) {
-    statement_2;
-} else if (condition_n) { 
-    statement_n; 
-} else { 
-    statement_last; 
+<span class="doc__code-red">if</span> (<span class="doc__code-gray">condition_1</span>) { 
+    <span class="doc__code-indigo">statement_1</span>; 
+} <span class="doc__code-red">else if</span> (<span class="doc__code-gray">condition_2</span>) {
+    <span class="doc__code-indigo">statement_2</span>;
+} <span class="doc__code-red">else if</span> (<span class="doc__code-gray">condition_n</span>) { 
+    <span class="doc__code-indigo">statement_n</span>; 
+} <span class="doc__code-red">else</span> { 
+    <span class="doc__code-indigo">statement_last</span>; 
 }
 </code>
 </pre>
@@ -479,12 +477,12 @@ if (condition_1) {
 
 <pre class="doc__pre">
 <code class="doc__code">
-if (condition) {
-    statement_1_runs_if_condition_is_true;
-    statement_2_runs_if_condition_is_true;
-} else {
-    statement_3_runs_if_condition_is_false;
-    statement_4_runs_if_condition_is_false;
+<span class="doc__code-red">if</span> (<span class="doc__code-gray">condition</span>) {
+    <span class="doc__code-indigo">statement_1_runs_if_condition_is_true</span>;
+    <span class="doc__code-indigo">statement_2_runs_if_condition_is_true</span>;
+} <span class="doc__code-red">else</span> {
+    <span class="doc__code-indigo">statement_3_runs_if_condition_is_false</span>;
+    <span class="doc__code-indigo">statement_4_runs_if_condition_is_false</span>;
 }
 </code>
 </pre>
@@ -496,8 +494,8 @@ if (condition) {
 
 <pre class="doc__pre">
 <code class="doc__code">
-if (x = y) {
-    <span class="doc__code-comment">/* statements here */</span>
+<span class="doc__code-red">if</span> (<span class="doc__code-indigo">x</span> = <span class="doc__code-gray">y</span>) {
+    <span class="doc__code-slate">/* statements here */</span>
 }
 </code>
 </pre>
@@ -508,8 +506,8 @@ if (x = y) {
 
 <pre class="doc__pre">
 <code class="doc__code">
-if ((x = y)) {
-    <span class="doc__code-comment">/* statements here */</span>
+<span class="doc__code-red">if</span> ((<span class="doc__code-indigo">x</span> = <span class="doc__code-gray">y</span>)) {
+    <span class="doc__code-slate">/* statements here */</span>
 }
 </code>
 </pre>
@@ -523,7 +521,7 @@ if ((x = y)) {
 
 <pre class="doc__pre">
 <code class="doc__code">
-while (condition) statement
+<span class="doc__code-red">while</span> (<span class="doc__code-gray">condition</span>) statement
 </code>
 </pre>
                         If the condition becomes false, statement within the loop stops
@@ -550,11 +548,11 @@ while (condition) statement
 
 <pre class="doc__pre">
 <code class="doc__code">
-var n = 0;
-var x = 0;
+<span class="doc__code-red">var</span> <span class="doc__code-indigo">n</span> = <span class="doc__code-gray">0</span>;
+<span class="doc__code-red">var</span> <span class="doc__code-indigo">x</span> = <span class="doc__code-gray">0</span>;
 
-while (n &lt; 3) {
-    n++; x +=n;
+whil<span class="doc__code-red">e</span> (<span class="doc__code-indigo">n</span> <span class="doc__code-green">&lt;</span> <span class="doc__code-gray">3</span>) {
+    <span class="doc__code-indigo">n</span><span class="doc__code-green">++</span>; <span class="doc__code-indigo">x</span> <span class="doc__code-green">+=</span><span class="doc__code-gray">n</span>;
 }
 </code>
 </pre>
@@ -599,8 +597,8 @@ while (n &lt; 3) {
 
 <pre class="doc__pre">
 <code class="doc__code">
-function square(number) {
-    return number * number;
+<span class="doc__code-red">function</span> <span class="doc__code-indigo">square</span>(<span class="doc__code-gray">number</span>) {
+    <span class="doc__code-red">return</span> <span class="doc__code-gray">number</span> <span class="doc__code-green">*</span> <span class="doc__code-gray">number</span>;
 }
 </code>
 </pre>
@@ -614,7 +612,7 @@ function square(number) {
                     </p>
 <pre class="doc__pre">
 <code class="doc__code">
-return number * number;
+<span class="doc__code-red">return</span> <span class="doc__code-gray">number</span> <span class="doc__code-green">*</span> <span class="doc__code-gray">number</span>;
 </code>
 </pre>
                     <p class="doc__paragraph">

@@ -723,6 +723,31 @@ body {
   color: rgb(254 240 138 / var(--tw-text-opacity));
 }
 
+.doc__code-red {
+  --tw-text-opacity: 1;
+  color: rgb(254 202 202 / var(--tw-text-opacity));
+}
+
+.doc__code-indigo {
+  --tw-text-opacity: 1;
+  color: rgb(199 210 254 / var(--tw-text-opacity));
+}
+
+.doc__code-gray {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.doc__code-green {
+  --tw-text-opacity: 1;
+  color: rgb(187 247 208 / var(--tw-text-opacity));
+}
+
+.doc__code-slate {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
 .doc__link {
   --tw-text-opacity: 1;
   color: rgb(147 197 253 / var(--tw-text-opacity));
