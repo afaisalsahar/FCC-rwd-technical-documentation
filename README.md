@@ -4,7 +4,7 @@
 This project is developed as part of FreeCodeCamp's responsive web design certification, leveraging HTML, CSS, TailwindCSS and component thinking.
 BEM methodology is used for class names and Display/Position properties to create a responsive layout. The design is inspired by TailwindCSS documentation page. 
 
-![Mockup](chttps://raw.githubusercontent.com/afaisalsahar/FCC-rwd-technical-documentation/main/assets/fcc-rwd-td-mockup.png)
+![Mockup](https://raw.githubusercontent.com/afaisalsahar/FCC-rwd-technical-documentation/main/assets/fcc-rwd-td-mockup.png)
 
 ## User Stories:
 
