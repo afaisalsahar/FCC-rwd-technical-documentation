@@ -592,18 +592,14 @@ body {
 
 .masthead {
   margin-bottom: 2.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
 .masthead__icon {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 3.75rem;
+  line-height: 1;
   --tw-text-opacity: 1;
   color: rgb(254 240 138 / var(--tw-text-opacity));
-  margin-top: 2.4px;
-  margin-right: 0.5rem;
+  display: inline-block;
 }
 
 .masthead__logo {
@@ -614,20 +610,13 @@ body {
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
   margin-bottom: 1.25rem;
-}
-
-.masthead__nav {
-  flex-basis: 100%;
+  display: inline-block;
 }
 
 .masthead__list {
   border-left-width: 4px;
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
-}
-
-.masthead__item {
-  width: 100%;
 }
 
 .masthead__link {
@@ -659,11 +648,17 @@ body {
 @media (min-width: 1024px) {
   .doc {
     margin-top: -2.5rem;
-    padding-left: 40%;
+    padding-left: 45%;
   }
 }
 
 @media (min-width: 1280px) {
+  .doc {
+    padding-left: 35%;
+  }
+}
+
+@media (min-width: 1536px) {
   .doc {
     padding-left: 30%;
   }

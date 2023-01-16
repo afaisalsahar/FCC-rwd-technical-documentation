@@ -17,26 +17,19 @@ body {
 .masthead {
     @apply lg:fixed;
     @apply mb-10;
-    @apply flex flex-wrap justify-start;
 }
 .masthead__icon {
-    @apply text-3xl;
+    @apply text-6xl;
     @apply text-yellow-200;
-    @apply mt-[2.4px] mr-2;
+    @apply inline-block
 }
 .masthead__logo {
     @apply text-4xl text-gray-50 font-extrabold uppercase;
     @apply mb-5;
-}
-.masthead__nav {
-    @apply basis-full;
+    @apply inline-block
 }
 .masthead__list {
     @apply border-l-4 border-gray-500;
-}
-
-.masthead__item {
-    @apply w-full;
 }
 
 .masthead__link {
@@ -55,7 +48,7 @@ body {
 }
 
 .doc {
-    @apply lg:pl-[40%] xl:pl-[30%] lg:-mt-10;
+    @apply lg:pl-[45%] xl:pl-[35%] 2xl:pl-[30%] lg:-mt-10;
 }
 .doc article {
     @apply my-10;   
