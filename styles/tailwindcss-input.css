@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply scroll-smooth;
+}
+body {
+    font-family: 'inter';
+    @apply bg-darkblue text-gray-300;
+}
+
+.td-container {
+    @apply container mx-auto py-10 px-5;
+}
+
+.masthead {
+    @apply lg:fixed;
+    @apply mb-10;
+    @apply flex flex-wrap justify-start;
+}
+.masthead__icon {
+    @apply text-3xl;
+    @apply text-yellow-200;
+    @apply mt-[2.4px] mr-2;
+}
+.masthead__logo {
+    @apply text-4xl text-gray-50 font-extrabold uppercase;
+    @apply mb-5;
+}
+.masthead__nav {
+    @apply basis-full;
+}
+.masthead__list {
+    @apply border-l-4 border-gray-500;
+}
+
+.masthead__item {
+    @apply w-full;
+}
+
+.masthead__link {
+    @apply font-semibold;
+    @apply block;
+    @apply w-full;
+    @apply py-1 pl-4;
+    @apply my-2 -m-1; 
+    @apply border-l-4 border-transparent;
+    @apply transition-all duration-150 ease-in-out;
+}
+.masthead__link:hover,
+.masthead__link:active,
+.masthead__link:focus {
+    @apply border-gray-50 text-gray-50;
+}
+
+.doc {
+    @apply lg:pl-[40%] xl:pl-[30%] lg:-mt-10;
+}
+.doc article {
+    @apply my-10;   
+}
+.doc__title {
+    @apply text-3xl font-extrabold text-gray-50;
+    @apply mb-5;
+}
+.doc__paragraph {
+    @apply my-5;
+}
+.doc__list {
+    @apply pl-10;
+}
+.doc__sub-list {
+    @apply pl-10;
+}
+.doc__item {
+    @apply list-disc list-outside;
+}
+.doc__sub-item {
+    @apply list-disc list-outside;
+}
+.doc__pre {
+    @apply bg-slate-800;
+    @apply my-5;
+    @apply pl-10;
+    @apply border-l-8 border-slate-600;
+    @apply overflow-scroll;
+}
+.doc__code {
+    @apply text-yellow-200;
+}
+
+.doc__link {
+    @apply text-blue-300;
+}
